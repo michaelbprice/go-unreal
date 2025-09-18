@@ -21,6 +21,9 @@ public:
 	UFUNCTION(BlueprintCallable, Category = "Go|GameController")
 	void Start();
 
+	UFUNCTION(BlueprintCallable, Category = "Go|GameController")
+	bool IsValidMoveFor(EPlayerColor color, int32 row, int32 column);
+
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ExposeOnSpawn = "true"), Category = "Go|GameController")
 	UImplPlayer* BlackPlayer = nullptr;
 
