@@ -73,3 +73,6 @@ Plugins/**/Intermediate/*
 
 # Cache files for the editor to use
 DerivedDataCache/*
+
+# Re-include files from the go-cpp Thirdparty, even if they are Binaries
+!Thirdparty/go-cpp/**/*
