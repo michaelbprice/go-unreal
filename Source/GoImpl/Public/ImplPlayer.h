@@ -13,6 +13,13 @@
 
 #include "ImplPlayer.generated.h"
 
+UENUM(BlueprintType)
+enum class EPlayerColor : uint8
+{
+	BLACK UMETA(DisplayName = "Black"),
+	WHITE UMETA(DisplayName = "White")
+};
+
 class UnrealUI
 {
 private:
