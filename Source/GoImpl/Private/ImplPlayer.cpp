@@ -16,3 +16,9 @@ Go::IPlayer& UImplPlayer::get()
 	return *m_player;
 }
 
+void UImplPlayer::PlaceStoneAt(int32 row, int32 column)
+{
+	Go::PointCoords coords{ static_cast<size_t>(row), static_cast<size_t>(column) };
+	get().placeStoneAt(coords);
+	UE_LOG(LogTemp, Warning, TEXT("%s placed stone at (row: %d, column: %d)"), *PlayerName, row, column);
+}

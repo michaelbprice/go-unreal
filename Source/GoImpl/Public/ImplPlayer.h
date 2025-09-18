@@ -54,6 +54,9 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadWrite, meta = (ExposeOnSpawn = "true"), Category = "Go|Player")
 	FString PlayerName = "Unknown";
 
+	UFUNCTION(BlueprintCallable, Category = "Go|Player")
+	void PlaceStoneAt(int32 row, int32 column);
+
 	Go::IPlayer& get();
 
 private:
