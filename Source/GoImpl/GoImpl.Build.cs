@@ -16,6 +16,6 @@ public class GoImpl: ModuleRules
 
         // Link Release build of go-cpp
         string ReleaseLibName = "goimpl.lib"; // Adjust if the library name differs
-        PublicAdditionalLibraries.Add(Path.Combine(GoCppLibPath, "Release", ReleaseLibName));
+        PublicAdditionalLibraries.Add(Path.Combine(GoCppLibPath, "RelWithDebInfo", ReleaseLibName));
     }
 }
